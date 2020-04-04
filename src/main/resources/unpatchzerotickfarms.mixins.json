@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.napalm.unpatchzerotick.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "server": [
+    "BambooBlockTickMixin",
+    "CactusBlockTickMixin",
+    "ChorusFlowerBlockTickMixin",
+    "AbstractPlantStemBlockTickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

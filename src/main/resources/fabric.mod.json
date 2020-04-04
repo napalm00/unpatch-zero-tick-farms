@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "unpatchzerotickfarm",
+  "version": "${version}",
+
+  "name": "Un-Patch Zero Tick Farms",
+  "description": "Un-patches zero tick farms",
+  "authors": [
+    "naPalm"
+  ],
+  "contact": {
+    "homepage": "https://napalm.me",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.napalm.unpatchzerotick.UnpatchZeroTick"
+    ]
+  },
+  "mixins": [
+    "unpatchzerotickfarms.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.10"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
