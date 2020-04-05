@@ -9,7 +9,8 @@
     "BambooBlockTickMixin",
     "CactusBlockTickMixin",
     "ChorusFlowerBlockTickMixin",
-    "AbstractPlantStemBlockTickMixin"
+    "AbstractPlantStemBlockTickMixin",
+    "SugarCaneBlockTickMixin"
   ],
   "injectors": {
     "defaultRequire": 1
