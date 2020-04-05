@@ -1,16 +1,8 @@
-# Fabric Example Mod
+# Un-patch Zero Tick Farms
 
-## Setup
+A FabricMC mod for Minecraft 20w14a that restores zero-tick farms (that were patched in 20w12a).
 
-1. Edit build.gradle and mod.json to suit your needs.
-    * The "mixins" object can be removed from mod.json if you do not need to use mixins.
-    * Please replace all occurences of "modid" with your own mod ID - sometimes, a different string may also suffice.
-2. Run the following command:
+## Installation
 
-```
-./gradlew idea
-```
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+1. Get the latest release from the [releases page](https://github.com/napalm00/unpatch-zero-tick-farms/releases)
+2. Place into the "mods" folder on your Fabric server. **This is a server-only mod, clients do not have to install it.**
