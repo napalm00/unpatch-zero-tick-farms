@@ -19,6 +19,8 @@ public class BambooBlockTickMixin {
 
 	@Inject(at = @At("TAIL"), method = "scheduledTick")
 	public void scheduledTick(final BlockState state, final ServerWorld world, final BlockPos pos, final Random random, CallbackInfo info) {
-		this.randomTick(state, world, pos, random);
+		if(!world.isAir(pos.down())) {
+			this.randomTick(state, world, pos, random);
+		}
 	}
 }
