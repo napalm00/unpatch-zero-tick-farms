@@ -5,6 +5,13 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
+  "client": [
+    "BambooBlockTickMixin",
+    "CactusBlockTickMixin",
+    "ChorusFlowerBlockTickMixin",
+    "AbstractPlantStemBlockTickMixin",
+    "SugarCaneBlockTickMixin"
+  ],
   "server": [
     "BambooBlockTickMixin",
     "CactusBlockTickMixin",
