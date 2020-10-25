@@ -9,15 +9,15 @@
     "BambooBlockTickMixin",
     "CactusBlockTickMixin",
     "ChorusFlowerBlockTickMixin",
-    "AbstractPlantStemBlockTickMixin",
-    "SugarCaneBlockTickMixin"
+    "SugarCaneBlockTickMixin",
+    "ZeroTickAbstractPlantPartBlock"
   ],
   "server": [
     "BambooBlockTickMixin",
     "CactusBlockTickMixin",
     "ChorusFlowerBlockTickMixin",
-    "AbstractPlantStemBlockTickMixin",
-    "SugarCaneBlockTickMixin"
+    "SugarCaneBlockTickMixin",
+    "ZeroTickAbstractPlantPartBlock"
   ],
   "injectors": {
     "defaultRequire": 1
