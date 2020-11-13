@@ -25,7 +25,7 @@ public class CactusBlockTickMixin {
 
 	@Inject(at = @At("TAIL"), method = "scheduledTick")
 	public void scheduledTick(final BlockState state, final ServerWorld world, final BlockPos pos, final Random random, CallbackInfo info) {
-		if(!world.isAir(pos.down())) {
+		if(!world.isAir(pos.down()) && world.isAir(pos.up()) && world.isAir(pos.north()) && world.isAir(pos.south()) && world.isAir(pos.west()) && world.isAir(pos.east())) {
 			this.randomTick(state, world, pos, random);
 		}
 	}
