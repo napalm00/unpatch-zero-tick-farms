@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 naPalm (hello@napalm.me)
+    Copyright 2021 naPalm (hello@napalm.me)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
     to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -17,10 +17,22 @@ package me.napalm.unpatchzerotick;
 
 import net.fabricmc.api.ModInitializer;
 
+import java.io.File;
+
 public class UnpatchZeroTick implements ModInitializer {
+	public static final String LOG_TAG = "Un-patch Zero Tick Farms";
+	public static String modId = "unpatch-zero-tick-farms";
+
+	private static final File configFilePath = new File("./config/"+ modId +".json");
+	private static Config.ConfigBean currentConfig;
+
 	@Override
 	public void onInitialize() {
+		currentConfig = new Config(configFilePath).get();
+		System.out.println(LOG_TAG + ": Loaded");
+	}
 
-		System.out.println("Un-patch Zero Tick Farms: Loaded");
+	public static Config.ConfigBean getConfig() {
+		return currentConfig;
 	}
 }
