@@ -2,7 +2,7 @@
 
 # Un-patch Zero Tick Farms
 
-A FabricMC mod for Minecraft 20w14a that restores zero-tick farms (that were patched in 20w12a).
+A FabricMC mod for Minecraft 1.17 that restores zero-tick farms (that were patched in 20w12a).
 
 ## Installation
 
